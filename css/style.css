@@ -60,6 +60,13 @@
     padding:0;
   }
 
+  .hero .white-highlight{
+    background-color: #ffffff;
+    padding-left: 15px;
+    padding-right:60px;
+    margin-left:-15px;
+  }
+
   .highlight {
     background-color: #ffdf00;
     padding-left: 15px;
