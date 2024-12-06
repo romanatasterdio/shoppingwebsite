@@ -104,13 +104,11 @@
     display:flex;
     justify-content: space-around;
     background-color: #EBD96B;
-    padding: 20px 5px;
-
-
+    padding: 20px 10px;
 }
 
 .brands img{
-    max-width: 150px;
+    max-width: 80px;
 }
 
 /* arrivals */
@@ -242,7 +240,7 @@
 
   .young-fav{
     align-items:center;
-    padding: 20px 50px;
+    padding: 120px 50px;
   }
 
 
@@ -258,7 +256,7 @@
 .promo {
     background-color: #d6bf44;
     text-align: center;
-    padding: 40px 20px;
+    padding: 80px 20px;
 }
 
 .promo h2 {
