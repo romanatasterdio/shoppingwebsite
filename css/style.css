@@ -103,8 +103,6 @@ body {
   transform: rotate(-2deg);
   background-color: #ebd96b;
   font-family: Poppins;
-
-
 }
 
 .straight-text {
@@ -132,8 +130,6 @@ body {
   gap: 8px;
 }
 
-
-
 .hero-image img {
   max-width: 100%;
   max-height: 100%;
@@ -146,7 +142,8 @@ body {
   display: flex;
   justify-content: space-around;
   background-color: #ebd96b;
-  padding: 20px 10px;
+  padding: 40px;
+  margin: 0;
 }
 
 .brands img {
@@ -155,29 +152,35 @@ body {
 
 /* arrivals */
 .new-arrivals {
-  padding: 10px 50px;
+  margin: 5px 40px;
   background-color: #fff;
   text-align: left;
 }
 
-.section-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 30px;
+.new-arrivals .section-title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 50px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
 .cards-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 90px;
+  max-width: 1200px;
 }
 
 .arrival-card {
-  /* width: 400px; */
+  max-width: 484px;
   border-radius: 20px;
   overflow: hidden;
   background-color: #fff;
   text-align: left;
+  margin:40px 0;
 }
 
 .card-image {
@@ -189,7 +192,7 @@ body {
   padding: 15px;
   display: flex;
   justify-content: center;
-  align-items: centers;
+  align-items: center;
   gap: 10px;
 }
 
