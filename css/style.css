@@ -21,12 +21,13 @@
     text-decoration: none;
     color: black;
     font-weight: 500;
+    padding: 8px;
   }
   
   .signup-btn {
     background-color: black;
     color: white;
-    padding: 8px 15px;
+    padding: 8px;
     border-radius: 5px;
     text-decoration: none;
   }
@@ -38,6 +39,7 @@
     align-items: center;
     padding: 50px;
     background-color: #f8f8f8;
+    margin:10px 25px;
   }
   
   .hero-text {
@@ -50,9 +52,17 @@
     line-height: 1.2;
   }
   
+  .promo-title p{
+    margin-bottom:0;
+    margin-top:0;
+    padding:0;
+  }
+
   .highlight {
     background-color: #ffdf00;
-    padding: 0 5px;
+    padding: 0 0px;
+    width: 190px;
+    
   }
   
   .hero-text p {
@@ -82,7 +92,7 @@
     display:flex;
     justify-content: space-around;
     background-color: #EBD96B;
-    /* padding: 20px 5px; */
+    padding: 20px 5px;
 
 
 }
@@ -93,9 +103,9 @@
 
 /* arrivals */
 .new-arrivals {
-    padding: 50px;
+    padding:10px 50px;
     background-color: #fff;
-    text-align: center;
+    text-align: left;
   }
   
   .section-title {
@@ -111,9 +121,8 @@
   }
   
   .arrival-card {
-    width: 300px;
+    /* width: 400px; */
     border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     background-color: #fff;
     text-align: left;
@@ -127,7 +136,8 @@
   .card-content {
     padding: 15px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: centers;
     gap: 10px;
   }
   
@@ -155,18 +165,17 @@
   .promo-card {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: #ffe066; /* Yellow background */
-    padding: 30px;
+    justify-content: space-around;
+    background-color: #ffe066; 
     border-radius: 15px;
-    max-width: 1000px;
-    margin: 50px auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border: 3px solid #b3d9ff; /* Blue border */
+    /* max-width: 1000px; */
+    /* margin: 50px auto; */
   }
   
   .promo-content {
     max-width: 50%;
+    border: 0;
+    border-width: 0;
   }
   
   .promo-title {
@@ -216,22 +225,25 @@
   .promo-image img {
     max-width: 300px;
     border-radius: 15px;
+    margin-bottom:0;
   }
 
   .young-fav{
-    text-align:center;
+    align-items:center;
+    padding: 20px 50px;
   }
 
+
+
   .fav-card {
-    width: 500px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* width: 500px; */
     overflow: hidden;
-    background-color: #fff;
     text-align: left;
   }
 
-  .promo {
+ 
+
+.promo {
     background-color: #d6bf44;
     text-align: center;
     padding: 40px 20px;
@@ -242,6 +254,7 @@
     font-size: 24px;
     font-weight: bold;
     color: #ffffff;
+    text-align: center;
 }
 
 .promo p {
@@ -250,10 +263,58 @@
     color: #ffffff;
 }
 
+/* mobile app  */
+.mobileapp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:10px 80px;
+}
+
+.mobileapp .text-content {
+  max-width: 50%;
+}
+
+.mobileapp .text-content h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.store-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.store-buttons img {
+  width: 150px;
+  cursor: pointer;
+}
+
+.mobileapp .image-content {
+  max-width: 35%;
+}
+
+.image-content img {
+  width: 100%;
+  border-radius: 20px;
+}
+
 .email-input {
     display: flex;
     justify-content: center;
     gap: 10px;
+    background-color: #fff;
+    width:240px;
+    margin:auto;
+    padding:3px 10px;
+    border-radius: 5px;
 }
 
 .email-input input {
@@ -311,22 +372,18 @@ footer {
 }
 
 .social-icons a{
-    width: 52px;
-    height: 52px;
-    gap: 0px;
-    /* border-radius: 15px 0px 0px 0px; */
-    opacity: 0px;
+    padding:4px;
+    border-radius: 5px;
     background-color: #EBD96B;
+    height: 100%;
+    width: 100%;
 }
 
 .social-icons a img {
     width: 13.39px;
-    height: 25px;
-    top: 13px;
-    left: 19px;
-    gap: 0px;
-    opacity: 0px;
-
+    object-fit: contain;
 }
+
+
   
   
