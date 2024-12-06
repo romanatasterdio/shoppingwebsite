@@ -44,9 +44,11 @@
   
   .hero-text {
     max-width: 50%;
+    
   }
   
   .hero-text h1 {
+    font-family: Poppins;
     font-size: 48px;
     margin: 0;
     line-height: 1.2;
@@ -60,7 +62,10 @@
 
   .highlight {
     background-color: #ffdf00;
-    padding: 0 0px;
+    padding-left: 15px;
+    padding-right:60px;
+    margin-left:-15px;
+
     width: 190px;
     
   }
