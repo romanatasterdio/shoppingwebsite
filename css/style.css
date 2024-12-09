@@ -62,12 +62,12 @@ body {
   padding:5px 15px;
 }
 
-.hero-text h1 {
+.hero-head {
   font-size: 4rem;
   font-weight: 900;
 }
 
-.hero-text p {
+.hero-desc {
   font-size: 1.5rem;
   font-weight: 240px;
 }
@@ -167,8 +167,6 @@ body {
 .card-image {
   object-fit: contain;
   width:400px;
-  /* width: 100%; */
-  /* height: auto; */
 }
 
 .card-content {
@@ -201,8 +199,74 @@ body {
   display: block;
 }
 
+
+
+/* paydown sale section */
+.promo-card {
+  display: flex;
+  justify-content: space-around;
+  background-color: #efd24b;
+  border-radius: 15px;
+  margin: 10px 0;
+  align-items: center;
+}
+
+
+.promo-image img {
+  max-width: 700px;
+  object-fit: contain;
+}
+
+
+.promo-content{
+  align-items: center;
+  justify-content: center;
+}
+
+.promo-content .highlight{
+  background-color: #ffffff;
+  padding:1px;
+  display: inline-block;
+  padding:3px 7px;
+}
+
+.hero-head p{
+  margin:0;
+}
+
+.promo-text {
+  font-weight: 500;
+}
+
+.promo-dates {
+  font-weight: 700;
+}
+
+.promo-terms {
+  font-weight: 400;
+}
+
+.promo-text, .promo-dates, .promo-terms{
+  font-size:32px;
+}
+
+.shop-now-button {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 25px;
+  font-weight:600px;
+}
+
+.shop-now-button:hover {
+  background-color: #444;
+}
+
 @media screen and (max-width: 1024px){
-  .hero-text h1{
+  .hero-head{
     font-size:2rem;
   }
   .hero-image img{
@@ -217,6 +281,14 @@ body {
   .new-arrivals .card-image{
     max-width:300px;
   }
+
+  .promo-text, .promo-dates, .promo-terms{
+    font-size:27px;
+  }
+
+.shop-now-button{
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -228,13 +300,13 @@ body {
   .hero-image img{
     max-width:350px;
   }
-  .hero-text h1{
-    font-size:1.5rem;
+  .hero-head{
+    font-size:1.4rem;
   }
-  .hero-text p{
+  .hero-desc{
     display:none;
   }
-  .shop-btn{
+.shop-now-button{
     padding:4px 8px;
   }
   .brands img{
@@ -253,11 +325,17 @@ body {
   .new-arrival .card-image{
     width: 150px;
   }
+  .promo-text, .promo-dates, .promo-terms{
+    font-size:16px;
+  }
+.shop-now-button{
+    font-size: 13px;
+  }
 
 }
 
 @media screen and (max-width: 425px){
-  .hero-text h1{
+  .hero-head{
     font-size:1rem;
   }
   .hero-image img{
@@ -276,10 +354,16 @@ body {
   .new-arrival .card-image{
     width:100px;
   }
+  .promo-text, .promo-dates, .promo-terms{
+    font-size:10px;
+  }
+.shop-now-button{
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 375px){
-  .hero-text h1{
+  .hero-head{
     font-size:10px;
   }
   .hero-image img{
@@ -292,94 +376,8 @@ body {
   .new-arrival .card-image{
     width:50px;
   }
-}
-
-/* paydown sale section */
-.promo-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #efd24b;
-  border-radius: 15px;
-  margin: 10px 0;
-}
-
-.promo-image img {
-  /* min-width: 70vw; */
-  max-width: 70vw;
-  object-fit: contain;
-  /* margin-top:20px; */
-  /* margin-left:10px; */
-}
-
-.promo-content {
-  /* max-width: 500px; */
-  border: 0;
-  border-width: 0;
-  /* padding-bottom: 20px; */
-  /* min-width: 30vw;
-  max-width: 30vw; */
-}
-
-.promo-title {
-  font-size: 50.61px;
-  font-weight: 600;
-}
-
-.promo-title p {
-  margin: 0;
-  padding: 0;
-}
-
-.promo-text {
-  font-size: 25.04px;
-  font-weight: 300;
-}
-
-.promo-dates {
-  font-size: 36.04px;
-  font-weight: 400;
-}
-
-.promo-terms {
-  font-size: 36.04px;
-  font-weight: 300;
-}
-
-.shop-now-button {
-  display: inline-block;
-  background-color: #000;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 28px;
-}
-
-.shop-now-button:hover {
-  background-color: #444;
-}
-
-@media (max-width: 768px) {
-  .promo-card {
-    margin: 0;
-  }
-  .promo-title {
-    font-size: 25px;
-    line-height: 30px;
-  }
-  .promo-text,
-  .promo-dates,
-  .promo-terms {
-    font-size: 15px;
-    line-height: 15px;
-  }
-  .shop-now-button {
-    font-size: 12px;
-  }
-
-  .promo-image img {
-    width: 60vw;
+.shop-now-button{
+    font-size: 8px;
   }
 }
 
