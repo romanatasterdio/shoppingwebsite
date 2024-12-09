@@ -298,7 +298,7 @@ body {
     margin-right:5px;
   }
   .hero-image img{
-    max-width:350px;
+    max-width:300px;
   }
   .hero-head{
     font-size:1.4rem;
@@ -326,10 +326,10 @@ body {
     width: 150px;
   }
   .promo-text, .promo-dates, .promo-terms{
-    font-size:16px;
+    font-size:11px;
   }
 .shop-now-button{
-    font-size: 13px;
+    font-size: 9px;
   }
 
 }
