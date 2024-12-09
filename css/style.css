@@ -6,7 +6,6 @@ body {
   object-fit: contain;
 }
 
-
 /* header section */
 .header {
   display: flex;
@@ -55,11 +54,11 @@ body {
   justify-content: space-around;
   background-color: #f4f6f5;
   border-radius: 59px;
-  margin:40px;
+  margin: 40px;
 }
 
 .hero-text {
-  padding:5px 15px;
+  padding: 5px 15px;
 }
 
 .hero-head {
@@ -93,7 +92,6 @@ body {
   background-color: #ebd96b;
 }
 
-
 .shop-btn {
   display: inline-block;
   background-color: black;
@@ -102,16 +100,15 @@ body {
   border-radius: 10px;
   font-weight: 500px;
   font-size: clamp(0.5rem, 2vw, 2rem);
-  padding:5px 10px;
+  padding: 5px 10px;
 }
 
 .hero-image img {
-  max-width:700px;
+  max-width: 700px;
   border-radius: 10px;
   object-fit: contain;
-  height:auto;
+  height: auto;
 }
-
 
 /* brands */
 .brands {
@@ -120,8 +117,8 @@ body {
   background-color: #ebd96b;
   padding: 20px;
   overflow-y: scroll;
-  margin-left:0;
-  margin-right:0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .brands img {
@@ -129,9 +126,6 @@ body {
   margin: 35px;
   object-fit: contain;
 }
-
-
-
 
 /* arrivals */
 .new-arrivals {
@@ -166,8 +160,8 @@ body {
 
 .card-image {
   object-fit: contain;
-  width:100%;
-  min-width:254px;
+  width: 100%;
+  min-width: 254px;
 }
 
 .card-content {
@@ -178,11 +172,11 @@ body {
   gap: 10px;
 }
 
-.card-head{
+.card-head {
   font-size: 1.5rem;
   font-weight: 500px;
   margin: 0;
-  color:#191919;
+  color: #191919;
 }
 
 .card-content .desc {
@@ -200,8 +194,6 @@ body {
   display: block;
 }
 
-
-
 /* paydown sale section */
 .promo-card {
   display: flex;
@@ -212,27 +204,25 @@ body {
   align-items: center;
 }
 
-
 .promo-image img {
   max-width: 700px;
   object-fit: contain;
 }
 
-
-.promo-content{
+.promo-content {
   align-items: center;
   justify-content: center;
 }
 
-.promo-content .highlight{
+.promo-content .highlight {
   background-color: #ffffff;
-  padding:1px;
+  padding: 1px;
   display: inline-block;
-  padding:3px 7px;
+  padding: 3px 7px;
 }
 
-.hero-head p{
-  margin:0;
+.hero-head p {
+  margin: 0;
 }
 
 .promo-text {
@@ -247,8 +237,10 @@ body {
   font-weight: 400;
 }
 
-.promo-text, .promo-dates, .promo-terms{
-  font-size:32px;
+.promo-text,
+.promo-dates,
+.promo-terms {
+  font-size: 32px;
 }
 
 .shop-now-button {
@@ -259,13 +251,12 @@ body {
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 25px;
-  font-weight:600px;
+  font-weight: 600px;
 }
 
 .shop-now-button:hover {
   background-color: #444;
 }
-
 
 /* youngs favourite section */
 
@@ -279,8 +270,8 @@ body {
   overflow-x: scroll;
 }
 
-.fav-card img{
-  width:100%;
+.fav-card img {
+  width: 100%;
   min-width: 310px;
 }
 
@@ -304,131 +295,24 @@ body {
   color: #ffffff;
 }
 
-
-@media screen and (max-width: 1024px){
-  .hero-head{
-    font-size:2rem;
-  }
-  .hero-image img{
-    max-width:500px;
-  }
-
-  .brands img{
-    max-width: 70px;
-    margin:20px;
-  }
-
-  .new-arrivals .card-image{
-    max-width:300px;
-  }
-
-  .promo-text, .promo-dates, .promo-terms{
-    font-size:27px;
-  }
-
-.shop-now-button{
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .hero{
-    border-radius:15px;
-    margin-left:5px;
-    margin-right:5px;
-  }
-  .hero-image img{
-    max-width:300px;
-  }
-  .hero-head{
-    font-size:1.4rem;
-  }
-  .hero-desc{
-    display:none;
-  }
-.shop-now-button{
-    padding:4px 8px;
-  }
-  .brands img{
-    max-width: 60px;
-    margin:15px;
-  }
-  .section-title{
-    font-size:1.5rem;
-  }
-  .card-head{
-    font-size: 1rem;
-  }
-  .card-content .desc {
-    font-size:0.5rem;
-  }
-  .promo-text, .promo-dates, .promo-terms{
-    font-size:11px;
-  }
-.shop-now-button{
-    font-size: 9px;
-  }
-
-}
-
-@media screen and (max-width: 425px){
-  .hero-head{
-    font-size:1rem;
-  }
-  .hero-image img{
-    max-width:200px;
-  }
-  .brands img{
-    max-width: 50px;
-    margin:10px;
-  }
-  .section-title{
-    font-size:1rem;
-  }
-  .card-head{
-    font-size: 0.8rem;
-  }
-  .promo-text, .promo-dates, .promo-terms{
-    font-size:10px;
-  }
-.shop-now-button{
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 375px){
-  .hero-head{
-    font-size:10px;
-  }
-  .hero-image img{
-    max-width:150px;
-  }
-  .brands img{
-    max-width: 40px;
-    margin:5px;
-  }
-.shop-now-button{
-    font-size: 8px;
-  }
-}
-
 /* mobile app  */
 .mobileapp {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 80px;
+  justify-content: space-around;
+  margin: 10px 30px;
+  /* padding: 10px 80px; */
 }
 
 .mobileapp .text-content h1 {
-  /* font-size: 36px; */
-  font-weight: bold;
+  font-size: 48px;
+  font-weight: 900px;
   margin-bottom: 20px;
 }
 
-.text-content p {
-  font-size: 18px;
-  margin-bottom: 30px;
+.mobileapp .text-content p {
+  font-weight: 500px;
+  font-size: 20px;
   color: #555;
 }
 
@@ -442,35 +326,167 @@ body {
   cursor: pointer;
 }
 
-.mobileapp .image-content {
-  max-width: 250px;
+.mobileapp .image-content img {
+  max-width: 600px;
 }
 
-.image-content img {
-  width: 100%;
-  border-radius: 20px;
-}
+@media screen and (max-width: 1024px) {
+  .hero-head {
+    font-size: 2rem;
+  }
+  .hero-image img {
+    max-width: 500px;
+  }
 
-@media (max-width: 768px) {
-  .mobileapp h1 {
+  .brands img {
+    max-width: 70px;
+    margin: 20px;
+  }
+
+  .new-arrivals .card-image {
+    max-width: 300px;
+  }
+
+  .promo-text,
+  .promo-dates,
+  .promo-terms {
+    font-size: 27px;
+  }
+
+  .shop-now-button {
     font-size: 20px;
-    line-height: 20px;
   }
-  .mobileapp p {
-    font-size: 12px;
-    line-height: 14px;
+  .mobileapp .image-content img {
+    max-width: 400px;
   }
-  .store-buttons {
-    gap: 5px;
+
+  .mobileapp .text-content h1 {
+    font-size: 38px;
   }
+
+  .mobileapp .text-content p {
+    font-size: 16px;
+  }
+
   .store-buttons img {
-    width: 80px;
+    width: 120px;
   }
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 768px) {
+  .hero {
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .hero-image img {
+    max-width: 300px;
+  }
+  .hero-head {
+    font-size: 1.4rem;
+  }
+  .hero-desc {
+    display: none;
+  }
+  .shop-now-button {
+    padding: 4px 8px;
+  }
+  .brands img {
+    max-width: 60px;
+    margin: 15px;
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+  .card-head {
+    font-size: 1rem;
+  }
+  .card-content .desc {
+    font-size: 0.5rem;
+  }
+  .promo-text,
+  .promo-dates,
+  .promo-terms {
+    font-size: 11px;
+  }
+  .shop-now-button {
+    font-size: 9px;
+  }
   .mobileapp .image-content {
     display: none;
+  }
+  .mobileapp .text-content .store-buttons, .text-content h1, .text-content p {
+    justify-content: center;
+  }
+  .mobileapp .text-content h1 {
+    font-size: 28px;
+  }
+
+  .mobileapp .text-content p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hero-head {
+    font-size: 1rem;
+  }
+  .hero-image img {
+    max-width: 200px;
+  }
+  .brands img {
+    max-width: 50px;
+    margin: 10px;
+  }
+  .section-title {
+    font-size: 1rem;
+  }
+  .card-head {
+    font-size: 0.8rem;
+  }
+  .promo-text,
+  .promo-dates,
+  .promo-terms {
+    font-size: 10px;
+  }
+  .shop-now-button {
+    font-size: 16px;
+  }
+  .mobileapp .text-content h1 {
+    font-size: 30px;
+  }
+
+  .mobileapp .text-content p {
+    font-size: 12px;
+  }
+
+  .store-buttons img {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero-head {
+    font-size: 10px;
+  }
+  .hero-image img {
+    max-width: 150px;
+  }
+  .brands img {
+    max-width: 40px;
+    margin: 5px;
+  }
+  .shop-now-button {
+    font-size: 8px;
+  }
+  .mobileapp .text-content h1 {
+    font-size: 20px;
+  }
+  .mobileapp .text-content p {
+    font-size: 9px;
+  }
+  .store-buttons img {
+    width: 90px;
   }
 }
 
@@ -564,5 +580,3 @@ footer {
   /* margin:5px; */
   object-fit: contain;
 }
-
-
