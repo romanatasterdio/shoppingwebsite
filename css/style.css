@@ -11,6 +11,7 @@ body {
   background-color: white;
 }
 
+
 .nav {
   display: flex;
   gap: 20px;
@@ -38,40 +39,35 @@ body {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1200px) {
+  .nav{
+    display: none;
+  }
+}
+
+
 /* hero section */
 .hero {
+  justify-content: center;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 50px;
-  padding-top: 40px;
+  padding: 20px 50px;
   margin: 30px 40px;
   background-color: #f4f6f5;
   border-radius: 59px;
+  .hero-text {
+    /* flex: 0 0 60%; */
+    margin-left: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
 }
 
-.hero-text {
-  /* flex: 0 0 60%; */
-  margin-left: 5px;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-}
 
 .hero-text h1 {
-  font-size: 96px;
-  font-weight: 900;
-  line-height: 120px;
+  font-size: 60px;
+  font-weight: 700;
 }
 
-.hero-text h1 span {
-  margin: 0;
-  padding: 0;
-}
-
-.hero-text h1 br {
-  margin: 0;
-  padding: 0;
-}
 
 .hero-text p {
   font-size: 32px;
@@ -79,25 +75,24 @@ body {
   font-family: Poppins;
   font-size: 32px;
   font-weight: 400;
-  line-height: 48px;
   letter-spacing: -0.05em;
 }
 
 .hero .white-highlight {
   background-color: #ffffff;
-  padding-left: 15px;
-  padding-right: 60px;
-  margin-left: -15px;
+  /* padding-left: 15px; */
+  /* padding-right: 60px; */
+  /* margin-left: -15px; */
   display: inline-block;
   transform: rotate(-2deg);
 }
 
 .hero .highlight {
   background-color: #ffdf00;
-  padding-left: 15px;
-  padding-right: 32px;
-  margin-left: -15px;
-  width: 400px;
+  /* padding-left: 15px; */
+  /* padding-right: 32px; */
+  /* margin-left: -15px; */
+  /* width: 400px; */
   display: inline-block;
   position: relative;
   transform: rotate(-2deg);
@@ -105,16 +100,17 @@ body {
   font-family: Poppins;
 }
 
-.straight-text {
-  position: absolute;
-  transform: rotate(2deg);
-  display: inline-block;
-}
 
 .hero-text p {
-  font-size: 32px;
-  font-weight: 300;
-  color: #191818;
+  font-family: Poppins;
+font-size: 32px;
+font-weight: 400;
+line-height: 48px;
+letter-spacing: -0.05em;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
 }
 
 .shop-btn {
@@ -131,10 +127,50 @@ body {
 }
 
 .hero-image img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 600px;
+  /* max-height: 100%; */
   border-radius: 10px;
-  display: block;
+  /* display: block; */
+  /* margin-top:auto;
+  margin-bottom:0; */
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1100px) {
+
+  .hero{
+    margin:0px;
+    padding:0;
+  }
+
+  .hero-text p{
+    display:none;
+  }
+  .hero-text h1 {
+    font-size: 40px;
+  font-weight: 500;
+  }
+
+  .hero-image img{
+    max-width:400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero{
+    border-radius: 20px;
+    justify-content: space-evenly;
+  }
+  .hero-text p{
+    display:none;
+  }
+  .hero-text h1 {
+    font-size: 20px;
+  }
+
+  .hero-image img{
+    max-width:200px;
+  }
 }
 
 /* brands */
@@ -147,45 +183,55 @@ body {
 }
 
 .brands img {
-  max-width: 80px;
+  max-width: 86.47px;
+}
+
+@media screen and (max-width: 1200px) {
+  .brands {
+    overflow-y: scroll;
+    padding:10px;
+  }
 }
 
 /* arrivals */
 .new-arrivals {
-  margin: 5px 40px;
+  margin: 65px 40px;
   background-color: #fff;
   text-align: left;
+
 }
 
-.new-arrivals .section-title {
-  font-size: 48px;
-  font-weight: 900;
-  line-height: 50px;
-  letter-spacing: 0.06em;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+.section-title {
+  font-size:40px;
+  font-weight: 800;
+  padding:10px 2px;
+  margin:10px 0;
 }
 
-.cards-container {
+.new-arrivals .cards-container {
   display: flex;
-  justify-content: center;
-  gap: 90px;
-  max-width: 1200px;
+  /* justify-content: center; */
+  text-align: left;
+  gap: 40px;
+  min-width: 100vw;
+  overflow-x:scroll;
 }
+
 
 .arrival-card {
-  max-width: 484px;
+  min-width: 200px;
   border-radius: 20px;
   overflow: hidden;
   background-color: #fff;
   text-align: left;
   margin: 40px 0;
+  
+
 }
 
 .card-image {
   width: 100%;
-  height: auto;
+  /* height: auto; */
 }
 
 .card-content {
@@ -217,6 +263,24 @@ body {
   margin-left: auto;
 }
 
+@media screen and (max-width: 700px) {
+  .section-title{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card-content h3{
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .arrival-card{
+    overflow-y: scroll;
+    width: 100%;
+  }
+}
+
 /* paydown sale section */
 .promo-card {
   display: flex;
@@ -228,8 +292,9 @@ body {
 }
 
 .promo-image img {
-  max-width: 670px;
-  margin-bottom: -75px;
+  /* min-width: 70vw; */
+  max-width: 70vw;
+  object-fit: contain;
   /* margin-top:20px; */
   /* margin-left:10px; */
 }
@@ -238,63 +303,34 @@ body {
   /* max-width: 500px; */
   border: 0;
   border-width: 0;
-  padding-bottom:20px;
+  /* padding-bottom: 20px; */
+  /* min-width: 30vw;
+  max-width: 30vw; */
 }
 
 .promo-title {
-  font-family: Poppins;
-  font-size: 111.61px;
-  font-weight: 900;
-  line-height: 137.19px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-size: 50.61px;
+  font-weight: 600;
 }
 
-.promo-title p {
-  margin: -5px;
-}
-
-.promo-title .highlight {
-  background-color: #fff;
-  /* padding: 5px 3px; */
-  padding-right: -10px;
-  border-radius: 5px;
-  max-width: 520px;
+.promo-title p{
+  margin:0;
+  padding:0;
 }
 
 .promo-text {
-  font-family: Poppins;
-  font-size: 36.04px;
-  font-weight: 500;
-  line-height: 52.32px;
-  letter-spacing: -0.02em;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  margin: 0;
+  font-size: 25.04px;
+  font-weight: 300;
 }
 
 .promo-dates {
-  font-family: Poppins;
   font-size: 36.04px;
-  font-weight: 700;
-  line-height: 52.32px;
-  letter-spacing: 0.02em;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-weight: 400;
 }
 
 .promo-terms {
-  font-family: Poppins;
   font-size: 36.04px;
-  font-weight: 400;
-  line-height: 52.32px;
-  letter-spacing: -0.02em;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-weight: 300;
 }
 
 .shop-now-button {
@@ -304,16 +340,46 @@ body {
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 28px;
 }
 
 .shop-now-button:hover {
   background-color: #444;
 }
 
+@media (max-width: 768px) {
+  .promo-card{
+    margin:0;
+  }
+  .promo-title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .promo-text, .promo-dates, .promo-terms{
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .shop-now-button {
+    font-size: 12px;
+  }
+
+  .promo-image img{
+    width:60vw;
+  }
+
+}
+
+
+/* youngs favourite section */
+
 .young-fav {
-  align-items: center;
-  padding: 120px 50px;
+  margin: 50px 40px;
+}
+
+
+.young-fav .cards-container{
+  display:flex;
+  gap:20px;
 }
 
 .fav-card {
@@ -342,6 +408,10 @@ body {
   color: #ffffff;
 }
 
+@media (max-width: 768px){
+  
+}
+
 /* mobile app  */
 .mobileapp {
   display: flex;
@@ -350,12 +420,9 @@ body {
   padding: 10px 80px;
 }
 
-.mobileapp .text-content {
-  max-width: 50%;
-}
 
 .mobileapp .text-content h1 {
-  font-size: 36px;
+  /* font-size: 36px; */
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -377,7 +444,7 @@ body {
 }
 
 .mobileapp .image-content {
-  max-width: 35%;
+  max-width: 250px;
 }
 
 .image-content img {
@@ -385,6 +452,30 @@ body {
   border-radius: 20px;
 }
 
+@media (max-width: 768px) {
+  .mobileapp h1{
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .mobileapp p{
+    font-size:12px;
+    line-height: 14px;
+  }
+  .store-buttons{
+    gap:5px;
+  }
+  .store-buttons img{
+    width:80px;
+  }
+}
+
+@media (max-width: 500px){
+  .mobileapp .image-content{
+    display:none;
+  }
+}
+
+/* email section */
 .email-input {
   display: flex;
   justify-content: center;
@@ -411,6 +502,13 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+
+@media (max-width: 500px){
+  .promo h2{
+    display:none;
+  }
+}
+
 
 /* Footer Section */
 footer {
@@ -450,15 +548,22 @@ footer {
   font-size: 14px;
 }
 
+.social-icons{
+  display: flex;
+}
+
 .social-icons a {
-  padding: 4px;
+  padding: 5px 10px;
   border-radius: 5px;
   background-color: #ebd96b;
-  height: 100%;
-  width: 100%;
+  display:block;
+  margin:4px;
+  
 }
 
 .social-icons a img {
   width: 13.39px;
+  height: 25px;
+  /* margin:5px; */
   object-fit: contain;
 }
