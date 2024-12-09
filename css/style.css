@@ -111,12 +111,34 @@ body {
   height:auto;
 }
 
+
+/* brands */
+.brands {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ebd96b;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.brands img {
+  max-width: 86.47px;
+  margin: 35px;
+  object-fit: contain;
+}
+
+
 @media screen and (max-width: 1024px){
   .hero-text h1{
     font-size:2rem;
   }
   .hero-image img{
     max-width:500px;
+  }
+
+  .brands img{
+    max-width: 70px;
+    margin:20px;
   }
 }
 
@@ -138,6 +160,10 @@ body {
   .shop-btn{
     padding:4px 8px;
   }
+  .brands img{
+    max-width: 60px;
+    margin:15px;
+  }
 
 }
 
@@ -148,6 +174,10 @@ body {
   .hero-image img{
     max-width:200px;
   }
+  .brands img{
+    max-width: 50px;
+    margin:10px;
+  }
 }
 
 @media screen and (max-width: 375px){
@@ -157,28 +187,12 @@ body {
   .hero-image img{
     max-width:150px;
   }
-}
-
-
-/* brands */
-.brands {
-  display: flex;
-  justify-content: space-around;
-  background-color: #ebd96b;
-  padding: 40px;
-  margin: 0;
-}
-
-.brands img {
-  max-width: 86.47px;
-}
-
-@media screen and (max-width: 1200px) {
-  .brands {
-    overflow-y: scroll;
-    padding: 10px;
+  .brands img{
+    max-width: 40px;
+    margin:5px;
   }
 }
+
 
 /* arrivals */
 .new-arrivals {
