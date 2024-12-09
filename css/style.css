@@ -166,7 +166,8 @@ body {
 
 .card-image {
   object-fit: contain;
-  width:400px;
+  width:100%;
+  min-width:254px;
 }
 
 .card-content {
@@ -177,14 +178,14 @@ body {
   gap: 10px;
 }
 
-.card-content  .card-head{
+.card-head{
   font-size: 1.5rem;
   font-weight: 500px;
   margin: 0;
   color:#191919;
 }
 
-.card-content p {
+.card-content .desc {
   margin: 0;
   font-size: 14px;
   color: #888;
@@ -265,6 +266,45 @@ body {
   background-color: #444;
 }
 
+
+/* youngs favourite section */
+
+.young-fav {
+  margin: 50px 40px;
+}
+
+.young-fav .cards-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+}
+
+.fav-card img{
+  width:100%;
+  min-width: 310px;
+}
+
+.promo {
+  background-color: #d6bf44;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.promo h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+
+.promo p {
+  margin: 10px 0 20px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+
 @media screen and (max-width: 1024px){
   .hero-head{
     font-size:2rem;
@@ -316,14 +356,11 @@ body {
   .section-title{
     font-size:1.5rem;
   }
-  .card-content  .card-head{
+  .card-head{
     font-size: 1rem;
   }
-  .card-content p {
+  .card-content .desc {
     font-size:0.5rem;
-  }
-  .new-arrival .card-image{
-    width: 150px;
   }
   .promo-text, .promo-dates, .promo-terms{
     font-size:11px;
@@ -348,11 +385,8 @@ body {
   .section-title{
     font-size:1rem;
   }
-  .card-content  .card-head{
+  .card-head{
     font-size: 0.8rem;
-  }
-  .new-arrival .card-image{
-    width:100px;
   }
   .promo-text, .promo-dates, .promo-terms{
     font-size:10px;
@@ -373,52 +407,9 @@ body {
     max-width: 40px;
     margin:5px;
   }
-  .new-arrival .card-image{
-    width:50px;
-  }
 .shop-now-button{
     font-size: 8px;
   }
-}
-
-/* youngs favourite section */
-
-.young-fav {
-  margin: 50px 40px;
-}
-
-.young-fav .cards-container {
-  display: flex;
-  gap: 20px;
-}
-
-.fav-card {
-  /* width: 500px; */
-  overflow: hidden;
-  text-align: left;
-}
-
-.promo {
-  background-color: #d6bf44;
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.promo h2 {
-  margin: 0;
-  font-size: 24px;
-  font-weight: bold;
-  color: #ffffff;
-  text-align: center;
-}
-
-.promo p {
-  margin: 10px 0 20px;
-  font-size: 16px;
-  color: #ffffff;
-}
-
-@media (max-width: 768px) {
 }
 
 /* mobile app  */
