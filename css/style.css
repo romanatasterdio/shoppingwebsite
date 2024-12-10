@@ -349,6 +349,9 @@ section{
   max-width: 600px;
 }
 
+.promo {
+  margin-bottom:0;
+}
 
 @media screen and (max-width: 1024px) {
   .hero-head {
