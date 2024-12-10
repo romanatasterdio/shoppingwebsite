@@ -612,16 +612,19 @@ footer {
 }
 
 .social-icons a {
-  padding: 5px 10px;
   border-radius: 5px;
   background-color: #ebd96b;
+  height: 40px;
+  width: 40px;
   display: block;
   margin: 4px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-icons a img {
-  width: 13.39px;
-  height: 25px;
-  /* margin:5px; */
+  height: 18.39px;
+  margin-bottom:2px;
   object-fit: contain;
 }
